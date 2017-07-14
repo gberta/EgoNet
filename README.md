@@ -15,7 +15,7 @@ year = {2017}
 
 1. Caffe Deep Learning library and its Python Wrapper (We use DeepLab_v2 version):
 
-	Caffe source code is included. Caffe and its python wrapper need to be compiled as instructed in http://caffe.berkeleyvision.org/installation.html. 
+	Caffe and its python wrapper need to be compiled as instructed in http://caffe.berkeleyvision.org/installation.html. 
 
 
 ## Usage
