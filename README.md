@@ -24,4 +24,4 @@ Change the path to your caffe directory in the "predict.py" file. Then, change t
 
 ## Pretrained Models
 
-Please download the pretrained models from the following link: https://drive.google.com/drive/folders/0B5ev-b4SAFZVcWk5emw5UTBtUWs?usp=sharing. We provide two models: 1) a model that works with first-person RGB and DHG inputs, and 2) a model with works just with the first-person RGB images.
+Please download the pretrained models from the following link: https://drive.google.com/drive/folders/0B5ev-b4SAFZVcWk5emw5UTBtUWs?usp=sharing. We provide two models: 1) a model that works with first-person RGB and DHG inputs, and 2) a model that works with just the first-person RGB images.
