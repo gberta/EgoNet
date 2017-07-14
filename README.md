@@ -21,3 +21,7 @@ year = {2017}
 ## Usage
 
 Change the path to your caffe directory in the "predict.py" file. Then, change the paths to the locations where the caffe models are placed. Select which of the models you want to run (RGB or RGB + DHG). Finally, run "predict.py"
+
+## Pretrained Models
+
+Please download the pretrained models from the following link: https://drive.google.com/drive/folders/0B5ev-b4SAFZVcWk5emw5UTBtUWs?usp=sharing. We provide two models: 1) a model that works with first-person RGB and DHG inputs, and 2) a model with works just with the first-person RGB images.
