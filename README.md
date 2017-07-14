@@ -3,12 +3,12 @@
 This is a code repository for the paper "First-Person Action-Object Detection with EgoNet". Our method predicts action-objects from first-person RGB or RGBD data. This work has been published in RSS 2017 Conference.
 
 Citation:  
-@InProceedings{gberta_2017_RSS, 
-author = {Gedas Bertasius and Hyun Soo Park and Stella X. Yu and Jianbo Shi},
-title = {First-Person Action-Object Detection with EgoNet},
-booktitle = {Proceedings of Robotics: Science and Systems},
-month = {July},
-year = {2017}
+@InProceedings{gberta_2017_RSS,  
+author = {Gedas Bertasius and Hyun Soo Park and Stella X. Yu and Jianbo Shi},  
+title = {First-Person Action-Object Detection with EgoNet},  
+booktitle = {Proceedings of Robotics: Science and Systems},  
+month = {July},  
+year = {2017}  
 }
 
 ## Installation
