@@ -106,15 +106,18 @@ for ff in files:
      
       ## Setting XY data
       XY=np.mgrid[0:num_rows,0:num_cols]
-      X=XY[1,:,:]/num_cols*255
-      Y=XY[0,:,:]/num_rows*255
-      junk=Y/num_rows*255
+      X=XY[1,:,:]/float(num_cols)*255
+      Y=XY[0,:,:]/float(num_rows)*255
+      junk=Y/float(num_rows)*255
       
-      spatial_data=np.zeros((3,num_rows,num_cols))
-      spatial_data[0,:,:]=X
-      spatial_data[1,:,:]=Y
-      spatial_data[2,:,:]=junk
- 
+      spatial_data=np.zeros((num_rows,num_cols,3))
+      spatial_data[:,:,0]=X
+      spatial_data[:,:,1]=Y
+      spatial_data[:,:,2]=junk
+
+      spatial_data -= np.array((127.25, 127.16, 0.00))
+      spatial_data = spatial_data.transpose((2,0,1))
+
       net.blobs['spatial_data'].reshape(1, *spatial_data.shape)
       net.blobs['spatial_data'].data[...] = spatial_data
     
@@ -124,7 +127,7 @@ for ff in files:
       print 'Done predicting!'
                       
       ## Outputting the data
-      layer_key='fc10_interp'
+      layer_key='fc10_sm'
       fc10 = net.blobs[layer_key].data[0][:,:,:]
       fc10=np.transpose(fc10, (1, 2, 0))
       fc10=fc10[:,:,1]
